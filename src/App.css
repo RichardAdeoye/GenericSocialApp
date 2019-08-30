@@ -1,8 +1,11 @@
 .App {
   text-align: center;
-  height: 80em;
+  height: 100%;
 }
 
+html, body, #root{
+  height: 100%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
