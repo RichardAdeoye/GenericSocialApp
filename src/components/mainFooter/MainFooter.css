@@ -1,4 +1,10 @@
-.Main-footer {
-    background-color: aquamarine !important;
+.Main-footer-container {
+    background-color: #ffa604;
+    color: white;
     justify-content: flex-end;
+    height: 7%;
+    margin: auto;
+}
+.Main-footer{
+    margin: auto;
 }

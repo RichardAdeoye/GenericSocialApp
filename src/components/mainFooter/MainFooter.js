@@ -4,7 +4,7 @@ import './MainFooter.css'
 class MainFooter extends Component{
     render() {
         return(
-          <footer className = "Main-footer"><h1>Main Footer</h1></footer>
+          <footer className = "Main-footer-container"><h1 className = "Main-footer">Main Footer</h1></footer>
         )
     }
     
