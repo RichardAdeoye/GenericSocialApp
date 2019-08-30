@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import './App.css';
 import firebase from 'firebase';
-import SignIn from './components/signIn/signIn';
+import MainHeader from './components/mainHeader/MainHeader';
+import SignIn from './components/signIn/SignIn';
+import MainFooter from './components/mainFooter/MainFooter';
+
 
 firebase.initializeApp({
   apiKey:"AIzaSyDYeUiqtbWoyBHj1HOaxGOdzFirPongc6M",
@@ -12,24 +15,12 @@ class App extends Component{
   render() {
     return (
       <div className = "App">
-
-        <div id = "Main-header-container">
-          <header id = "Main-header"> <h1>Main Header</h1> </header>
-        </div>
-
-        <div id = "Main-content-container">
+          <MainHeader/>
           <SignIn/> 
-        </div>
-
-        <div id = "Main-footer-container" >
-          <footer id = "Main-footer"><h1>Main Footer</h1></footer>
-        </div>
-
+          <MainFooter/>
        </div>
-     
     )
   }
 }
-
 
 export default App;

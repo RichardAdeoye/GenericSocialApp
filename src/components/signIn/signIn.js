@@ -10,7 +10,7 @@ class SignIn extends Component{
         firebase.auth.GoogleAuthProvider.PROVIDER_ID
       ],
       callbacks: {
-        signInSuccess: () => false
+        signInSuccessWithAuthResult: () => false
       }
     }
   
@@ -23,7 +23,7 @@ class SignIn extends Component{
    
     render() {
       return (
-        <div className="SignIn">
+        <div className="signIn">
           {this.state.isSignedIn ? (
             <span>
               <div>Signed In</div> 
