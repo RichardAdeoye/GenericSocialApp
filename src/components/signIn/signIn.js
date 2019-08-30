@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import firebase from 'firebase';
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+import './SignIn.css';
 
 class SignIn extends Component{
     state = { isSignedIn : false }
