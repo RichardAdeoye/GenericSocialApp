@@ -2,3 +2,6 @@
     height: 70% ;
     background-color: cadetblue;
 }
+.firebaseui-idp-button {
+    border-radius: 25px !important;
+}
