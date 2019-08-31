@@ -6,7 +6,7 @@ import './SignIn.css';
 class SignIn extends Component{
     state = { isSignedIn : false }
     uiConfig = {
-      signInFlow: "popup", //redirect option
+      signInFlow: "redirect", //redirect or popup option
       signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID
       ],
