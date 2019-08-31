@@ -19,7 +19,7 @@
 
 .firebaseui-container {
     position: relative !important;
-    top: 200px !important;
+    top: 400px !important;
 }
 
 .firebaseui-idp-google>.firebaseui-idp-text {
@@ -37,3 +37,15 @@
     height: 28px !important;
 }
 
+.profile-image {
+    border-radius: 80px;
+    width: 240px;
+}
+
+.sign-out {
+    width: 100px;
+    height: 35px;
+    background-color: orange;
+    border-style: none;
+    border-radius: 25px;
+}

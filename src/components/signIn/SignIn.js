@@ -27,10 +27,13 @@ class SignIn extends Component{
         <div className="signIn">
           {this.state.isSignedIn ? (
             <span>
-              <div>Signed In</div> 
-              <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
+              <div>
               <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
-              <img alt="social img" src={firebase.auth().currentUser.photoURL}/>
+              <img className = "profile-image" alt="social img" src={firebase.auth().currentUser.photoURL}/>
+              </div>
+              <div>
+              <button className = "sign-out" onClick={() => firebase.auth().signOut()}>Sign out!</button>
+              </div>
             </span>
             
        ) : ( 
