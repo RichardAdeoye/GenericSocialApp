@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import firebase from 'firebase';
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import './SignIn.css';
+import {Link} from 'react-router-dom';
 
 class SignIn extends Component{
     state = { isSignedIn : false }
@@ -33,6 +34,11 @@ class SignIn extends Component{
               </div>
               <div>
               <button className = "sign-out" onClick={() => firebase.auth().signOut()}>Sign out!</button>
+              </div>
+              <div>
+                <Link to= '/tracker'>
+                <button className = "track-button"> Track Your Trips! </button>
+                </Link>
               </div>
             </span>
             
